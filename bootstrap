@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")"
+ROOT=$(pwd)
+
+echo "Source directory is: $DOTFILES_ROOT"
+
+set -e
+
+print_success_message () {
+  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
+}
+
+make_symbolic_link() {
+  ln -sfn $1 $2
+  print_success_message "Linked $1 to $2"
+}
+
+install_dotfiles() {
+  echo "Installing dotfiles to target directory."
+  echo "Source directory: $ROOT"
+  echo "Target directory: $HOME"
+  for source in `find . -name \*.symlink`
+  do
+    dest="$HOME/.`basename \"${source%.*}\"`"
+    source="$ROOT/$source"
+    echo "Linking $source to $dest"
+    make_symbolic_link $source $dest
+  done
+  echo "Done."
+}
+
+install_dotfiles

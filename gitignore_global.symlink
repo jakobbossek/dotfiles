@@ -1,0 +1,28 @@
+# MAC OS X
+.cache
+.Trash
+.Trashes
+.DS_Store
+.DS_Store?
+Thumbs.db
+#Icon?
+.Spotlight-V100
+
+# Archives
+*.tar
+*.rar
+*.zip
+*.7z
+*.gzip
+*.bzip2
+*.gz
+*.tar
+*.jar
+*.dmg
+
+# R
+.Rhistory
+
+# Python
+__pycache__
+*.pyc
