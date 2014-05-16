@@ -3,8 +3,6 @@
 cd "$(dirname "$0")"
 ROOT=$(pwd)
 
-echo "Source directory is: $DOTFILES_ROOT"
-
 set -e
 
 print_success_message () {
@@ -16,18 +14,24 @@ make_symbolic_link() {
   print_success_message "Linked $1 to $2"
 }
 
-install_dotfiles() {
-  echo "Installing dotfiles to target directory."
-  echo "Source directory: $ROOT"
-  echo "Target directory: $HOME"
-  for source in `find . -name \*.symlink`
+install() {
+  source=$1
+  dest=$2
+  if ! [ -d "$source" -o -d "$dest" ]; then
+    echo "Source and destiniation parameters must be valid direcotries."
+  fi
+
+  echo "S: $source, D: $dest"
+  for file in `find "$source"`
   do
-    dest="$HOME/.`basename \"${source%.*}\"`"
-    source="$ROOT/$source"
-    echo "Linking $source to $dest"
-    make_symbolic_link $source $dest
+    if [ "$file" = "$source" ]; then
+      continue
+    fi
+    dest_loc="$dest/`basename $file`"
+    source_loc="$ROOT/$file"
+    make_symbolic_link $source_loc $dest_loc
   done
-  echo "Done."
 }
 
-install_dotfiles
+install "atom" "${HOME}/.atom"
+install "dotfiles" "$HOME"
