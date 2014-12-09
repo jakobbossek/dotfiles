@@ -14,6 +14,8 @@ You need:
 * bracket highlighter
 * use [SodaTheme](https://github.com/buymeasoda/soda-theme/)
 * for nice colour themes see the [ColourSublime](http://colorsublime.com/)
+* [colourthemes by daylerees](https://github.com/daylerees/colour-schemes)
+* great minimal dark sublime UI style [spacegray](https://github.com/kkga/spacegray)
 
 
 ## Package manager
