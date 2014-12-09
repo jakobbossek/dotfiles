@@ -84,3 +84,10 @@ alias gcl='git clone'
 alias gch='git checkout'
 alias gbr='git branch'
 alias glog="git log --pretty=format:'%C(yellow)%h%Creset | %s%d [%C(red)%an%Creset@%ad]' --date=short"
+
+# -----------------------------------------
+# brew aliases
+# -----------------------------------------
+alias bup='brew update && brew upgrade && brew upgrade brew-cask'
+alias bcl='brew cleanup && brew cask cleanup'
+alias bdoc='brew doctor'
