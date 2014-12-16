@@ -33,5 +33,4 @@ install() {
   done
 }
 
-install "atom" "${HOME}/.atom"
 install "dotfiles" "$HOME"
