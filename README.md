@@ -21,6 +21,7 @@ A package manager helps to overcome these major drawbacks and moreover keeps all
 your software nicely managed in a dedicted location. The
 [homebrew package manager](http://brew.sh/) and its extension [homebrew cask](http://caskroom.io/)
 are essential.
+For that you need to accept the licence agreement in Xcode and install the latest version in the app store.
 Run the following commands to install brew and brew cask extension.
 Keep in mind to get rid of all error and warning messages of brew doctor.
 The terminal command chmod and chown may be helpful to handle most of the issues.
@@ -34,19 +35,19 @@ brew install caskroom/cask/brew-cask
 Get infos on formulas via the *info* command
 
 ```
+brew cask search sublime
 brew cask info sublime-text
 brew cask install sublime-text
+brew cask uninstall sublime-text
 ```
-
-**Note**: For that you need to accept the licence
-agreement in Xcode and install the latest version in the app store.
 
 
 Install great stuff, which makes life of a developer easier:
 
 ```
 brew install ack autojump tmux libxml2 wget git openssl
-brew casc install iterm2 sublime-text google-chrome skim telegram skitch dashlane dropbox caffeine thunderbird
+brew cask install iterm2 sublime-text google-chrome skim skitch dashlane dropbox caffeine thunderbird
+brew cask install python3 skype
 ```
 
 You may find general information on how to [search casks](https://github.com/caskroom/homebrew-cask#learn-more) and search [brew formulas](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme) useful.
@@ -89,12 +90,7 @@ in sublime text even more awesome.
 * Alignment (allows alignment of multiple lines via *ctrl+alt+a* by default)
 * GitGutter-Edge (shows git diffs in gutter)
 * SublimeGit (git integration in sublime text)
-
-## vim
-
-Install vim with brew. Import your .vimrc file. Run :PluginInstall to let Vundle
-install all the plugins.
-
+* LatexTools (LaTeX integration)
 
 ## dotfiles
 
