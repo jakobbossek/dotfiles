@@ -55,7 +55,8 @@ You may find general information on how to [search casks](https://github.com/cas
 
 ## Replace shell
 
-Instead of the familiar bash I make use of the even more awesome zsh shell. Type the following to replace bash with zsh as yur default shell and moreover install the great [ohmyzsh](https://github.com/robbyrussell/oh-my-zsh) stuff:
+Instead of the familiar bash I make use of the even more awesome zsh shell. Type the following to replace bash with zsh as yur default shell and moreover install the great [ohmyzsh](https://github.com/robbyrussell/oh-my-zsh) stuff.
+The **.zshrc** file is located in this dotfiles repository (see below). My theme must be copied to the **~/.oh-my-zsh/themes** folder
 
 ```
 chsh -s $(which zsh)
