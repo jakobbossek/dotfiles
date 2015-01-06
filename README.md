@@ -47,11 +47,20 @@ Install great stuff, which makes life of a developer easier:
 ```
 brew install ack autojump tmux libxml2 wget git openssl
 brew cask install iterm2 sublime-text google-chrome skim skitch dashlane dropbox caffeine thunderbird
-brew cask install python3 skype
+brew cask install python3 skype zsh
 ```
 
 You may find general information on how to [search casks](https://github.com/caskroom/homebrew-cask#learn-more) and search [brew formulas](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme) useful.
 
+
+## Replace shell
+
+Instead of the familiar bash I make use of the even more awesome zsh shell. Type the following to replace bash with zsh as yur default shell and moreover install the great [ohmyzsh](https://github.com/robbyrussell/oh-my-zsh) stuff:
+
+```
+chsh -s $(which zsh)
+curl -L http://install.ohmyz.sh | sh
+```
 
 ## iTerm2
 
