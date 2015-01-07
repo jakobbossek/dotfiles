@@ -42,10 +42,10 @@ brew cask uninstall sublime-text
 ```
 
 
-Install great stuff, which makes life of a developer easier:
+Install great stuff, which makes life of a developer easier (brew automatically installs dependencies):
 
 ```
-brew install ack autojump tmux libxml2 wget git openssl
+brew install ack autojump tmux libxml2 wget git svn openssl
 brew cask install iterm2 sublime-text google-chrome skim skitch dashlane dropbox caffeine thunderbird
 brew cask install python3 skype zsh
 ```
@@ -68,6 +68,9 @@ curl -L http://install.ohmyz.sh | sh
 Replace terminal with the more fancy [iTerm2](http://iterm2.com/):
 Activate the [solarized theme](https://github.com/altercation/solarized) for iTerm2.
 
+## BetterSnapTool
+
+In OS X you can enlarge or shrink a window very easy by dragging a corner or edge. Unfortunately it is not possible to drag a window to - for example - the right side of the screen and align it nicely to take half of the screen. This missing functionality is the main contribution of BetterSnapTool. Unfortunately it is not yet handled by brew. Thus you have to install it manually.
 
 ## Sublime Text 2/3
 
@@ -101,6 +104,7 @@ in sublime text even more awesome.
 * GitGutter-Edge (shows git diffs in gutter)
 * SublimeGit (git integration in sublime text)
 * LatexTools (LaTeX integration)
+* R-Box (some basic R helpers)
 
 ## dotfiles
 
