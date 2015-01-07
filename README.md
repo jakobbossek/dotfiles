@@ -103,7 +103,7 @@ in sublime text even more awesome.
 * Alignment (allows alignment of multiple lines via *ctrl+alt+a* by default)
 * GitGutter-Edge (shows git diffs in gutter)
 * SublimeGit (git integration in sublime text)
-* LatexTools (LaTeX integration)
+* LatexTools (Very nice LaTeX integration. See the [LatexTools github page](https://github.com/SublimeText/LaTeXTools) for an overview of existing commands)
 * R-Box (some basic R helpers)
 
 ## dotfiles
