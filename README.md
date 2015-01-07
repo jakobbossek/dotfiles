@@ -47,7 +47,7 @@ Install great stuff, which makes life of a developer easier (brew automatically 
 ```
 brew install ack autojump tmux libxml2 wget git svn openssl
 brew cask install iterm2 sublime-text google-chrome skim skitch dashlane dropbox caffeine thunderbird
-brew cask install python3 skype zsh
+brew cask install python3 skype zsh mactex
 ```
 
 You may find general information on how to [search casks](https://github.com/caskroom/homebrew-cask#learn-more) and search [brew formulas](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme) useful.
