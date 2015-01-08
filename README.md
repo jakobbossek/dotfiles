@@ -105,6 +105,7 @@ in sublime text even more awesome.
 * SublimeGit (git integration in sublime text)
 * LatexTools (Very nice LaTeX integration. See the [LatexTools github page](https://github.com/SublimeText/LaTeXTools) for an overview of existing commands)
 * R-Box (some basic R helpers)
+* [SearchInProject](https://github.com/leonid-shevtsov/SearchInProject_SublimeText/blob/master/README.md) (allow to search project-wide with ack, grep, ...)
 
 ## dotfiles
 
