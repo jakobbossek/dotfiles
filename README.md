@@ -32,7 +32,8 @@ brew doctor
 brew install caskroom/cask/brew-cask
 ```
 
-Get infos on formulas via the *info* command
+In the following there is an example of some useful commands of brew. You may find general information on how to [search casks](https://github.com/caskroom/homebrew-cask#learn-more) and search [brew formulas](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme) useful.
+
 
 ```
 brew cask search sublime
@@ -42,15 +43,9 @@ brew cask uninstall sublime-text
 ```
 
 
-Install great stuff, which makes life of a developer easier (brew automatically installs dependencies):
-
-```
-brew install ack autojump tmux libxml2 wget git svn openssl
-brew cask install iterm2 sublime-text google-chrome skim skitch dashlane dropbox caffeine thunderbird
-brew cask install python3 skype zsh mactex
-```
-
-You may find general information on how to [search casks](https://github.com/caskroom/homebrew-cask#learn-more) and search [brew formulas](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme) useful.
+Install great stuff, which makes life of a developer easier (brew automatically installs dependencies).
+Make *brew.sh* executable and run it via `./brew.sh'. The following command line tools and programms
+will be installed: ack, autojump, tmux, libxml2, wget, git, svn, openssl, iterm2, sublime-text, google-chrome, skim, skitch, dashlane, dropbox, caffeine, thunderbird, python3, skype, zsh, mactex
 
 
 ## Replace shell
