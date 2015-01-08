@@ -3,7 +3,8 @@ ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="jakobbossek"
+#ZSH_THEME="jakobbossek"
+ZSH_THEME="3den"
 
 # Example aliases
 # alias zshconfig="subl ~/.zshrc"
@@ -35,7 +36,7 @@ plugins=(git git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/texlive/2011/bin/x86_64-darwin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/rvm/gems/ruby-1.9.3-p194/bin:/usr/local/rvm/gems/ruby-1.9.3-p194@global/bin:/usr/local/rvm/rubies/ruby-1.9.3-p194/bin:/usr/local/rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/wayneeseguin/.sm/bin:/Users/wayneeseguin/.sm/pkg/active/bin:/Users/wayneeseguin/.sm/pkg/active/sbin:$HOME/bin
+export PATH=/usr/local/bin:/usr/local/texlive/2011/bin/x86_64-darwin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/rvm/gems/ruby-1.9.3-p194/bin:/usr/local/rvm/gems/ruby-1.9.3-p194@global/bin:/usr/local/rvm/rubies/ruby-1.9.3-p194/bin:/usr/local/rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/wayneeseguin/.sm/bin:/Users/wayneeseguin/.sm/pkg/active/bin:/Users/wayneeseguin/.sm/pkg/active/sbin:$HOME/bin:/usr/texbin
 
 # set php path to newest php verison available in MAMP
 export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:$PATH
