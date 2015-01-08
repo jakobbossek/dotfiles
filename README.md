@@ -44,7 +44,7 @@ brew cask uninstall sublime-text
 
 
 Install great stuff, which makes life of a developer easier (brew automatically installs dependencies).
-Make *brew.sh* executable and run it via `./brew.sh'. The following command line tools and programms
+Make *brew.sh* executable and run it via `./brew.sh`. The following command line tools and programms
 will be installed: ack, autojump, tmux, libxml2, wget, git, svn, openssl, iterm2, sublime-text, google-chrome, skim, skitch, dashlane, dropbox, caffeine, thunderbird, python3, skype, zsh, mactex
 
 
