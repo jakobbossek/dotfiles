@@ -28,7 +28,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git)
+plugins=(git)
 
 # autojump stuff
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
@@ -95,3 +95,13 @@ alias glog="git log --pretty=format:'%C(yellow)%h%Creset | %s%d [%C(red)%an%Cres
 alias bup='brew update && brew upgrade && brew upgrade brew-cask'
 alias bcl='brew cleanup && brew cask cleanup'
 alias bdoc='brew doctor'
+
+# open my todo markdown file
+alias todo='subl ~/Desktop/ToDo.md'
+
+# open some important URLs
+alias mygh='open https://github.com/jakobbossek'
+
+function dict() {
+    open "http://www.dict.cc/?s=$1"
+}
