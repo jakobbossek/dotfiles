@@ -3,8 +3,8 @@ ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-#ZSH_THEME="jakobbossek"
-ZSH_THEME="3den"
+ZSH_THEME="jakobbossek"
+#ZSH_THEME="3den"
 
 # Example aliases
 # alias zshconfig="subl ~/.zshrc"
