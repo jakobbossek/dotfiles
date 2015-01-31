@@ -34,3 +34,4 @@ install() {
 }
 
 install "dotfiles" "$HOME"
+make_symbolic_link "$(pwd)/jakobbossek.zsh-theme" "$HOME/.oh-my-zsh/themes/"

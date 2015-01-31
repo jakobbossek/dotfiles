@@ -42,7 +42,7 @@
 	"caret_extra_width": 0,
 	"caret_style": "smooth",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/base16-ocean.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
@@ -92,7 +92,7 @@
 		"CVS"
 	],
 	"font_face": "Menlo",
-	"font_size": 12,
+	"font_size": 13,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": false,
@@ -100,8 +100,8 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Emmet",
 		"Markdown",
+		"Emmet",
 		"Vintage"
 	],
 	"indent_guide_options":
