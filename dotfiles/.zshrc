@@ -41,6 +41,9 @@ export PATH=/usr/local/bin:/usr/local/texlive/2011/bin/x86_64-darwin:/opt/local/
 # set php path to newest php verison available in MAMP
 export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:$PATH
 
+# export our R tool for building and checking packages
+export PATH=~/repositories/git/dt:$PATH
+
 # -----------------------------------------
 # History
 # -----------------------------------------
@@ -105,3 +108,6 @@ alias mygh='open https://github.com/jakobbossek'
 function dict() {
     open "http://www.dict.cc/?s=$1"
 }
+
+# PALMA login
+alias sshpalma1='ssh bossek@palma1.uni-muenster.de'
