@@ -4,10 +4,6 @@
 options(
   repos = c(CRAN = "http://cran.r-mirror.de/"),
   help_type = "text",
-  parallelMap.default.autostart = TRUE,
-  parallelMap.default.mode = "multicore",
-  parallelMap.default.cpus = as.numeric(try(system(command="sysctl -n hw.ncpu", intern = TRUE))),
-  parallelMap.default.show.info = FALSE,
   mlrMBO.debug.mode = TRUE,
   mlrMBO.show.info = FALSE
 )
@@ -29,6 +25,22 @@ options(help_type = "html")
     }
 
     options(digits = 4)
+
+    n.cpus = 1L
+    # determint number of cores on OS X
+    if (isDarwin()) {
+      n.cpus = as.numeric(try(system(command="sysctl -n hw.ncpu", intern = TRUE)))
+    }
+
+    # setup parallelMap
+    options(
+      parallelMap.default.autostart = TRUE,
+      parallelMap.default.mode = "multicore",
+      parallelMap.default.cpus = n.cpus,
+      parallelMap.default.show.info = FALSE
+    )
+
+    # handle history
     Sys.setenv(R_HISTSIZE = 4000)
     loadhistory("~/.Rhistory")
       catf("Happy coding!")
@@ -37,8 +49,9 @@ options(help_type = "html")
 }
 
 .Last = function() {
-	if (interactive()) {
+  if (interactive()) {
     try(savehistory("~/.Rhistory"))
- 		cat("Goodbye!\n")
- 	}
+    cat("Goodbye!\n")
+  }
 }
+
