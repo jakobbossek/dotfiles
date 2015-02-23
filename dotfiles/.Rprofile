@@ -7,7 +7,6 @@ options(
   mlrMBO.debug.mode = TRUE,
   mlrMBO.show.info = FALSE
 )
-options(help_type = "html")
 
 .First = function() {
   if (interactive()) {
