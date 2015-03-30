@@ -2,7 +2,7 @@
 
 # set op
 options(
-  repos = c(CRAN = "http://cran.r-mirror.de/"),
+  repos = c(CRAN = "http://cran.uni-muenster.de"),
   help_type = "text",
   mlrMBO.debug.mode = TRUE,
   mlrMBO.show.info = FALSE
@@ -26,7 +26,7 @@ options(
     options(digits = 4)
 
     n.cpus = 1L
-    # determint number of cores on OS X
+    # determine number of cores on OS X
     if (isDarwin()) {
       n.cpus = as.numeric(try(system(command="sysctl -n hw.ncpu", intern = TRUE)))
     }
@@ -36,7 +36,8 @@ options(
       parallelMap.default.autostart = TRUE,
       parallelMap.default.mode = "multicore",
       parallelMap.default.cpus = n.cpus,
-      parallelMap.default.show.info = FALSE
+      parallelMap.default.show.info = FALSE,
+      parallelMap.default.logging = TRUE
     )
 
     # handle history
@@ -53,4 +54,3 @@ options(
     cat("Goodbye!\n")
   }
 }
-
