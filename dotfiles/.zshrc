@@ -72,6 +72,11 @@ alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias repos='cd ~/repositories/'
 
+# function to make dir and switch to it directly
+functon mcd() {
+  mkdir $1 && cd $1
+}
+
 # -----------------------------------------
 # Programming language specific aliases
 # -----------------------------------------
@@ -92,6 +97,11 @@ alias gch='git checkout'
 alias gbr='git branch'
 alias glog="git log --pretty=format:'%C(yellow)%h%Creset | %s%d [%C(red)%an%Creset@%ad]' --date=short"
 
+# function to make dir, switch to it and initialize a new git repo
+function mkrep() {
+  mkdir $1 && cd $1 && git init
+}
+
 # -----------------------------------------
 # brew aliases
 # -----------------------------------------
@@ -111,3 +121,6 @@ function dict() {
 
 # PALMA login
 alias sshpalma1='ssh bossek@palma1.uni-muenster.de'
+
+# added by travis gem
+[ -f /Users/jboss/.travis/travis.sh ] && source /Users/jboss/.travis/travis.sh
