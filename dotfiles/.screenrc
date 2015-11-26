@@ -1,0 +1,10 @@
+startup_message off
+term screen-256color
+vbell off
+
+caption always "%?%{ Wk}%-Lw%?%{Rk}%n*%f %t%?(%u)%?%?%{Wk}%+Lw%? %{Rk}%=%c %{rk}%d/%M/%Y"
+hardstatus string "%{+b Rk}(%{-b g}$LOGNAME@%H%{+b R}) (%{-b g}%C %a%{+b R}) %{-b g} %n %t %h"
+
+module load tools/R/3.1
+module load compiler/intel/12.1
+module load git
