@@ -124,3 +124,5 @@ alias sshpalma1='ssh bossek@palma1.uni-muenster.de'
 
 # added by travis gem
 [ -f /Users/jboss/.travis/travis.sh ] && source /Users/jboss/.travis/travis.sh
+
+eval `/usr/libexec/path_helper -s`
