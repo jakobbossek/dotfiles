@@ -3,12 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="jakobbossek"
-#ZSH_THEME="3den"
-
-# Example aliases
-# alias zshconfig="subl ~/.zshrc"
-# alias ohmyzsh="subl ~/.oh-my-zsh"
+ZSH_THEME="materialshell"
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
@@ -28,7 +23,10 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(
+  git,
+  zsh-autosuggestions
+)
 
 # autojump stuff
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
@@ -43,6 +41,8 @@ export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:$PATH
 
 # export our R tool for building and checking packages
 export PATH=~/repositories/git/dt:$PATH
+
+export PKG_CONFIG_PATH=/usr/local/bin/pkg-config:$PKG_CONFIG_PATH
 
 # -----------------------------------------
 # History
@@ -76,6 +76,12 @@ alias repos='cd ~/repositories/'
 functon mcd() {
   mkdir $1 && cd $1
 }
+
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.oh-my-zsh"
+
+alias mysite="open http://www.jakobbossek.de/"
+alias mygithub="open https://www.github.com/jakobbossek"
 
 # -----------------------------------------
 # Programming language specific aliases
@@ -120,9 +126,24 @@ function dict() {
 }
 
 # PALMA login
-alias sshpalma1='ssh bossek@palma1.uni-muenster.de'
+alias sshpalma1='ssh bossek@palma2.uni-muenster.de'
+alias sshpalma2='ssh bossek@palma2c.uni-muenster.de'
+alias sshls1='ssh bossek@D-3160W05.uni-muenster.de'
+alias sshcedar='ssh -Y jboss@cedar.computecanada.ca'
+alias sshgraham='ssh -Y jboss@graham.computecanada.ca'
 
 # added by travis gem
 [ -f /Users/jboss/.travis/travis.sh ] && source /Users/jboss/.travis/travis.sh
 
 eval `/usr/libexec/path_helper -s`
+
+# rt stuff
+PATH=~/.R/library/rt/bin:$PATH
+
+alias newSlides='mkdir -p slideTemplate && cp -r ~/repositories/latex_templates/slides/ slideTemplate'
+alias newPoster='mkdir -p posterTemplate && cp -r ~/repositories/latex_templates/poster/ posterTemplate'
+
+export CPLUS_INCLUDE_PATH=/usr/local/include
+export LIBRARY_PATH=/usr/local/lib
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

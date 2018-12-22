@@ -1,9 +1,32 @@
+
+# automatically detach sessions
+autodetach on
+
+# omit startup messages
 startup_message off
+
+# Big scrollback
+defscrollback 5000
+
+# Colors!!!
 term screen-256color
+
+# No sound
 vbell off
 
-caption always "%?%{ Wk}%-Lw%?%{Rk}%n*%f %t%?(%u)%?%?%{Wk}%+Lw%? %{Rk}%=%c %{rk}%d/%M/%Y"
+# Display the status line at the bottom
+hardstatus on
+hardstatus alwayslastline
+#caption always "%?%{ Wk}%-Lw%?%{Rk}%n*%f %t%?(%u)%?%?%{Wk}%+Lw%? %{Rk}%=%c %{rk}%d/%M/%Y"
 hardstatus string "%{+b Rk}(%{-b g}$LOGNAME@%H%{+b R}) (%{-b g}%C %a%{+b R}) %{-b g} %n %t %h"
+
+# Setup screens
+cd ~
+screen -t 'run' 0 bash # First screen for running R and submit jobs
+screen -t 'monitor' 1 bash # Second one is for monitoring
+screen -t 'workspace' 2 bash # Third one is for basic commands
+
+select 0
 
 module load tools/R/3.1
 module load git
