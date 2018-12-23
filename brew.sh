@@ -18,7 +18,7 @@ install() {
 }
 
 # install raw brew stuff
-install "brew" "caskroom/cask/brew-cask ack autojump tmux libxml2 wget git svn openssl zsh"
+install "brew" "caskroom/cask/brew-cask ack libgit2 libxml2 openssl autojump tree screen tmux wget git svn zsh"
 
 # install brew cask stuff
-install "brew cask" "iterm2 sublime-text google-chrome skim skitch dashlane dropbox caffeine thunderbird python3 skype mactex"
+install "brew cask" "xquartz mactex iterm2 sublime-text google-chrome skim skitch vlc dropbox python3 skype r"

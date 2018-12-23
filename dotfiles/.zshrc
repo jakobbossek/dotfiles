@@ -28,9 +28,6 @@ plugins=(
   zsh-autosuggestions
 )
 
-# autojump stuff
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
@@ -38,10 +35,6 @@ export PATH=/usr/local/bin:/usr/local/texlive/2011/bin/x86_64-darwin:/opt/local/
 
 # set php path to newest php verison available in MAMP
 export PATH=/Applications/MAMP/bin/php/php5.4.4/bin:$PATH
-
-# export our R tool for building and checking packages
-export PATH=~/repositories/git/dt:$PATH
-
 export PKG_CONFIG_PATH=/usr/local/bin/pkg-config:$PKG_CONFIG_PATH
 
 # -----------------------------------------
@@ -70,7 +63,7 @@ alias lsal='ls -al'
 alias cls='clear'
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
-alias repos='cd ~/repositories/'
+alias repos='cd ~/repos/'
 
 # function to make dir and switch to it directly
 functon mcd() {
@@ -140,10 +133,13 @@ eval `/usr/libexec/path_helper -s`
 # rt stuff
 PATH=~/.R/library/rt/bin:$PATH
 
-alias newSlides='mkdir -p slideTemplate && cp -r ~/repositories/latex_templates/slides/ slideTemplate'
-alias newPoster='mkdir -p posterTemplate && cp -r ~/repositories/latex_templates/poster/ posterTemplate'
+alias newSlides='mkdir -p slideTemplate && cp -r ~/repos/misc/latex_templates/slides/ slideTemplate'
+alias newPoster='mkdir -p posterTemplate && cp -r ~/repos/misc/latex_templates/poster/ posterTemplate'
 
+# libxml2 stuff
 export CPLUS_INCLUDE_PATH=/usr/local/include
 export LIBRARY_PATH=/usr/local/lib
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
